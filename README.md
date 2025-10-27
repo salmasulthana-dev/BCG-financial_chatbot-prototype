@@ -1,31 +1,29 @@
-# 💼 BCG GenAI Job Simulation – Financial Chatbot Prototype
+# 💼 BCG GenAI Job Simulation: Simple Financial-Analysis Chatbot
 
 This project was completed as part of **The Forage – BCG (Boston Consulting Group) GenAI Job Simulation**.  
-It demonstrates how Generative AI and data analysis can be combined to automate simple financial insights.
+It demonstrates how generative AI and data analysis can automate financial insights using a simple chatbot built with Flask and Pandas.
 
 ---
 
 ## 🧠 Overview
-This prototype is a minimal **Flask-based AI chatbot** that reads financial data from a CSV file and answers three predefined questions related to business performance.
+This prototype is a lightweight **Flask web app** that reads a CSV file (`financial_data.csv`) and answers three predefined business questions related to company performance.
 
 ---
 
-## 📊 Features
-1. **Total Revenue Calculation** — Returns the total revenue from the dataset.
-2. **Net Income Change (YoY)** — Compares the last two years’ net income and reports the change.
-3. **SG&A Percentage** — Calculates what percentage of revenue was spent on Selling, General, and Administrative costs.
+## 💬 Predefined Queries & Answers
+1. **What is the total revenue?**  
+   → Returns the sum of the **Total Revenue** column.
+
+2. **How has net income changed over the last year?**  
+   → Compares the last two rows in the **Net Income** column and reports the absolute change.
+
+3. **What percentage of revenue is spent on Selling, General & Administrative (SG&A)?**  
+   → Calculates SG&A spend as a percentage of total revenue.
 
 ---
 
-## ⚙️ Technologies Used
-- Python
-- Flask
-- Pandas
-- CSV Data Handling
-
----
-
-## 🚀 How to Run
-1. Install dependencies:
+## ⚙️ How to Run Locally
+1. Make sure you have Python installed.  
+2. Install required dependencies:
    ```bash
    pip install flask pandas
